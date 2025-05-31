@@ -19,14 +19,17 @@ p{
 
 a:link{
     color: white;
+    text-decoration: none;
 }
 a:visited{
-    color:green;
+    color:white;
+    text-decoration: none;
 }
 a:hover,a:active{
     background-color: rgb(65, 65, 237);
     padding: 10px;
     color: white;
+    text-decoration: none;
 
 }
 .colorMenu{
