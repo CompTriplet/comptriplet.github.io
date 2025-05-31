@@ -21,10 +21,6 @@ a:link{
     color: white;
     text-decoration: none;
 }
-a:visited{
-    color:white;
-    text-decoration: none;
-}
 a:hover,a:active{
     background-color: rgb(65, 65, 237);
     padding: 10px;
