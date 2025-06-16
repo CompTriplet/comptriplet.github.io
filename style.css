@@ -16,6 +16,10 @@ p{
     padding-bottom: 30px;
     position: sticky;
 }
+.picture{
+    margin: 0 auto;
+    display: flex;
+}
 
 a:link{
     color: white;
