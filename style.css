@@ -8,6 +8,10 @@ p,pre{
     font-size: large;
 }
 
+header{
+    text-align: center;
+}
+
 .menubuttons{
     word-spacing: 30px;
     font-size: large;
@@ -20,6 +24,11 @@ p,pre{
 .picture{
     display: flex;
     align-items: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 a:link{
