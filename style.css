@@ -8,10 +8,6 @@ p,pre{
     font-size: large;
 }
 
-header{
-    text-align: center;
-}
-
 .menubuttons{
     word-spacing: 30px;
     font-size: large;
@@ -27,8 +23,17 @@ header{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+.boxes{
+    background-color: lightskyblue;
+    margin: auto; 
+    width: 500px; 
+    border: 5px solid darkblue; 
+    border-radius: 12px; 
+    margin-bottom: 20px; 
 }
 
 a:link{
