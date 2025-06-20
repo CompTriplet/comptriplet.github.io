@@ -22,6 +22,12 @@ p{
     margin:  0 auto;
 }
 
+.words{
+    display: flex;
+    align-items: center;
+    margin:  0 auto;
+}
+
 a:link{
     color: white;
     text-decoration: none;
