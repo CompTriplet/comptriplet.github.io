@@ -2,12 +2,12 @@ body{ background-color:rgb(232, 229, 229);}
 h1{
     text-shadow: 2px 2px 5px lightblue;
     font-size: 70px;
-    margin: 0 auto;
 }
-p{
+p,pre{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
 }
+
 .menubuttons{
     word-spacing: 30px;
     font-size: large;
