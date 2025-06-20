@@ -2,7 +2,7 @@ body{ background-color:rgb(232, 229, 229);}
 h1{
     text-shadow: 2px 2px 5px lightblue;
     font-size: 70px;
-    margin: auto;
+    margin: 0 auto;
 }
 p{
     font-family: 'Courier New', Courier, monospace;
@@ -20,7 +20,6 @@ p{
 .picture{
     display: flex;
     align-items: center;
-    margin:  0 auto;
 }
 
 a:link{
