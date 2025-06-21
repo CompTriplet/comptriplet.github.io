@@ -2,10 +2,12 @@ body{ background-color:rgb(232, 229, 229);}
 h1{
     text-shadow: 2px 2px 5px lightblue;
     font-size: 70px;
+    font-size:10vw;
 }
 p,pre{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
+    font-size:3vw;
 }
 
 .menubuttons{
@@ -20,6 +22,8 @@ p,pre{
 .picture{
     display: flex;
     align-items: center;
+    max-width: 100%;
+    height: auto;
 }
 
 img{
@@ -31,9 +35,11 @@ img{
     background-color: lightskyblue;
     margin: auto; 
     width: 500px; 
-    border: 5px solid darkblue; 
+    border: 5px solid rgb(0, 86, 139); 
     border-radius: 12px; 
     margin-bottom: 20px; 
+    max-width: 100%;
+    height: auto;
 }
 
 a:link{
