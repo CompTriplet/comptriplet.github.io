@@ -1,5 +1,6 @@
 body{ background-color:rgb(232, 229, 229);}
-h1{
+/* header */
+h1{ 
     text-shadow: 2px 2px 5px lightblue;
     font-size: 70px;
 }
@@ -10,6 +11,20 @@ p,pre{
 img{
     width:500px; 
     height:600px;
+}
+
+.learnButton{
+    border-width: 8px;
+    border-radius: 12px;
+    background-color: rgb(62, 196, 196);
+    /*centered the button*/
+    margin: auto;
+    display: block ;
+    /*centered the button*/
+    width: 200px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 .menubuttons{

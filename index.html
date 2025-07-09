@@ -3,6 +3,7 @@
     <head>
         <link rel = "stylesheet" href="style.css"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src = "script.js"></script>
     </head>
     <div class = "menubuttons">
         <a href = "index.html" class = "colorMenu">Home</a>
@@ -11,7 +12,7 @@
         <a href = "blog.html" class = "colorMenu">Blog</a>
         <a href = "contact.html" class = "colorMenu">Contact</a>
     </div>
-    <body>    
+    <body id = "home">    
             <div class = "picture">
                 <div class = "text">
                     <h1 style = "text-align: center; ">Oge Ikem</h1>
@@ -19,9 +20,9 @@
                         Hello, my name is Oge Ikem. 
               I am an aspiring Software Developer who strives 
               to develop efficent, creative, and organized code!
-             </pre>
+                    </pre>
+                    <button class = "learnButton" onclick = "takeToAbout()"> Learn more about me!</button>
                 </div>
-    
                 <img src = "websitePortfolio.png" alt = "My picture" 
                 style = "width:500px; height:600px; border: 5px solid black; margin-top: 50px; margin-right: 20px;">
             </div>
