@@ -3,7 +3,6 @@
     <head>
         <link rel = "stylesheet" href="style.css"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     </head>
     <body>  
         <div class = "menubuttons">
@@ -12,35 +11,41 @@
             <a href = "projects.html" class = "colorMenu">Projects</a>
             <a href = "contact.html" class = "colorMenu">Contact</a>
         </div>
-        <header class = "words" style = "text-align: center;" >
+        <header style = "text-align: center;">
             <h1>About me</h1>
             <form> I am proficient in many programming languages such as
-                <select class = "options" onchange = "where()">
-                    <option value = "where I have utilized it in programming projects in UW-Madison">Java</option>
-                    <option>Python</option>
-                    <option>HTML</option>
-                    <option>CSS</option>
-                    <option>C</option>
-                    <option>JavaScript</option>
-                    <option>SQL</option>
-                    <option>R</option>
+                <select id = "options" onchange = "where()">
+                    <option value = "Java">Java</option>
+                    <option value = "Python ">Python</option>
+                    <option value = "HTML">HTML</option>
+                    <option  value = "CSS">CSS</option>
+                    <option  value = "C">C</option>
+                    <option  value = "JavaScript">JavaScript</option>
+                    <option  value = "SQL">SQL</option>
+                    <option  value = "R">R</option>
                 </select>
-                <p class = "whereUsed"></p>
             </form>
+            <p id = "whereUsed"></p>
             <form> I am familar with sofware such as
                 <select>
                     <option>React</option>
                     <option>Visual Code Studio</option>
                     <option>Git</option>
                 </select>
-                <p class = "whereUsed"></p>
             </form>
+            <p id = "whereUsed"></p>
             <form> I am interested in learning and working with
                 <select>
                     <option>AI</option>
                 </select>
-                <p class = "whereUsed"></p>
             </form>
+            <p id = "whereUsed"></p>
         </header>
+        <script>
+            function where(){
+                let sentence = document.getElementsById("powerCh").value
+                document.getElementsById("every").innerHTML = "Hope this works" + sentence
+            }
+        </script>
     </body> 
 </html>
