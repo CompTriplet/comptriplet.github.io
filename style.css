@@ -41,7 +41,9 @@ select{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }
-
+.linkedIn{
+    font-size: 30px;
+}
 .menubuttons{
     word-spacing: 30px;
     font-size: large;
