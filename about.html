@@ -15,7 +15,7 @@
             <h1>About me</h1>
             <form>
                 I am proficient in many programming languages such as
-                <select id="options">
+                <select class = ".rotating-select">
                   <option value="Java">Java</option>
                   <option value="Python">Python</option>
                   <option value="HTML">HTML</option>
@@ -26,31 +26,44 @@
                   <option value="R">R</option>
                 </select>
               </form>
-              <script>
-                const selectElement = document.getElementById('options');
+            <p id = "whereUsed"></p>
+            <form> I am familar with sofware and tools such as
+                <select class = ".rotating-select">
+                    <option>Git</option>
+                    <option>Visual Code Studio</option>
+                    <option>React</option>
+                    <option>Github</option>
+                    <option>Github Copilot</option>
+                    <option>Pandas</option>
+                    <option>Jupyter Notebook</option>
+                    <option>Numpy</option>
+                </select>
+            </form>
+            <p id = "whereUsed"></p>
+            <form> I am interested in creating 
+                <select class = ".rotating-select">
+                    <option>AI Workflows</option>
+                    <option>Data Driven Solution</option>
+                    <option>Innovative Technology</option>
+                </select>
+            </form>
+            <script>
+                // Get all select elements with the rotating-select class
+                const selectElements = document.querySelectorAll('.rotating-select');
+
+                // Apply rotation to each select element
+                selectElements.forEach((selectElement) => {
                 const options = selectElement.querySelectorAll('option');
                 let currentIndex = 0;
               
                 // Rotate options every 2 seconds
+                //setInterval() to rotate through options every 2 seconds (2000ms)
                 setInterval(() => {
                   currentIndex = (currentIndex + 1) % options.length;
                   selectElement.selectedIndex = currentIndex;
                 }, 2000);
-              </script>
-            <p id = "whereUsed"></p>
-            <form> I am familar with sofware such as
-                <select>
-                    <option>React</option>
-                    <option>Visual Code Studio</option>
-                    <option>Git</option>
-                </select>
-            </form>
-            <p id = "whereUsed"></p>
-            <form> I am interested in learning and working with
-                <select>
-                    <option>AI</option>
-                </select>
-            </form>
+            });
+            </script>
             <p id = "whereUsed"></p>
         </header>
     </body> 
