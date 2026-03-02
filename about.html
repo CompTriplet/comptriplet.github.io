@@ -13,18 +13,30 @@
         </div>
         <header style = "text-align: center;">
             <h1>About me</h1>
-            <form> I am proficient in many programming languages such as
-                <select id = "options" onchange = "where(this.value)">
-                    <option value = "Java">Java</option>
-                    <option value = "Python ">Python</option>
-                    <option value = "HTML">HTML</option>
-                    <option  value = "CSS">CSS</option>
-                    <option  value = "C">C</option>
-                    <option  value = "JavaScript">JavaScript</option>
-                    <option  value = "SQL">SQL</option>
-                    <option  value = "R">R</option>
+            <form>
+                I am proficient in many programming languages such as
+                <select id="options">
+                  <option value="Java">Java</option>
+                  <option value="Python">Python</option>
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
+                  <option value="C">C</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="SQL">SQL</option>
+                  <option value="R">R</option>
                 </select>
-            </form>
+              </form>
+              <script>
+                const selectElement = document.getElementById('options');
+                const options = selectElement.querySelectorAll('option');
+                let currentIndex = 0;
+              
+                // Rotate options every 2 seconds
+                setInterval(() => {
+                  currentIndex = (currentIndex + 1) % options.length;
+                  selectElement.selectedIndex = currentIndex;
+                }, 2000);
+              </script>
             <p id = "whereUsed"></p>
             <form> I am familar with sofware such as
                 <select>
